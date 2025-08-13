@@ -25,13 +25,19 @@ SECRET_KEY = 'django-insecure-!()tdsdll6ykd0r=7j#oi-@q9k@(mk70g=j7n%0lny^7hbakm*
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["*"]
+# ALLOWED_HOSTS = ["*"]
+ALLOWED_HOSTS = [
+    "127.0.0.1",
+    "localhost",
+    "djangoecommweb1-11.onrender.com"
+]
 
 
 # Application definition
 
 INSTALLED_APPS = [
     'django.contrib.admin',
+    'django.contrib.sites',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
@@ -40,6 +46,8 @@ INSTALLED_APPS = [
     'ecommerceapp',
     'authcart',
 ]
+
+SITE_ID = 1
 # PAYTM_MERCHANT_ID = "DIY12386817555501617"  # Example test MID (use your own from Paytm dashboard)
 # PAYTM_MERCHANT_KEY = "bKMfNxPPf_QdZppa"    # 16 characters (required)
 # PAYTM_WEBSITE = "WEBSTAGING"
