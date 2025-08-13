@@ -158,7 +158,7 @@ STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 MESSAGE_TAGS = {
     messages.ERROR:'danger'
 }
-# Needed for Render
-if os.environ.get('RENDER'):
-    DEBUG = False
+# # Needed for Render
+# if os.environ.get('RENDER'):
+#     DEBUG = False
 
